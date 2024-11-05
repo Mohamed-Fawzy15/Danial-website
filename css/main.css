@@ -1,0 +1,211 @@
+:root {
+  --section-bg: #f7f7f7;
+  --header-color: #343434;
+}
+
+body {
+  --bs-body-font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-color {
+  background-color: var(--section-bg);
+}
+
+.section-space {
+  padding: 100px 0px;
+}
+
+.text-header {
+  color: var(--header-color);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.75rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 200px;
+  height: 30px;
+  background-image: url(../imgs/dots2.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+/* start of hero section */
+
+.hero {
+  background-image: url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.65;
+  z-index: -1;
+}
+
+.hero-links li {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-links li a i {
+  font-size: 0.875rem;
+}
+
+.hero-caption {
+  display: inline-flex;
+}
+
+.hero-caption :last-child {
+  display: flex;
+  border-right: 1px solid white;
+  overflow: hidden;
+  animation-name: typing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  white-space: nowrap;
+}
+
+/* end of hero section */
+
+/* start of about section */
+
+.about-img:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -10px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.about-data h2 {
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+  font-weight: 800;
+}
+
+.about-subTitile {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(153, 153, 153);
+}
+
+.about-info {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: rgb(116, 129, 130);
+}
+.skills .bar {
+  --bs-progress-height: 1.5rem;
+}
+
+.about-btn {
+  padding: 10px 30px;
+  background-color: black;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+.about-btn:hover {
+  background: transparent;
+  color: #343434;
+}
+
+.about-btn2 {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+
+.about-btn2:hover {
+  background: black;
+  color: #eee;
+}
+/* end of about section */
+
+/* start of services section */
+
+.services-inner {
+  padding: 50px 20px;
+  background-color: white;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.services-icon {
+  font-size: 1.875rem;
+  line-height: 30px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s all ease-in-out;
+}
+
+.services-icon:hover {
+  background-color: black;
+  color: white;
+}
+
+.services-inner h3 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+  color: rgb(52, 52, 52);
+}
+
+.services-inner p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: rgb(116, 129, 130);
+  word-spacing: 2px;
+}
+
+/* end of services section */
